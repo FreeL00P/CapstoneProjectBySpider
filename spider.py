@@ -14,8 +14,8 @@ def login():
     driver.get(base_url)
     driver.find_element_by_class_name('zppp-panel-qrcode-bar__triangle').click()
     driver.find_element_by_xpath('//div[@class="zppp-panel-normal__inner"]/ul/li[2]').click()
-    driver.find_elements_by_xpath('//div[@class="zppp-input__container"]/input')[0].send_keys('18573044937')
-    driver.find_elements_by_xpath('//div[@class="zppp-input__container"]/input')[1].send_keys('qq1084472249')
+    driver.find_elements_by_xpath('//div[@class="zppp-input__container"]/input')[0].send_keys('账号')
+    driver.find_elements_by_xpath('//div[@class="zppp-input__container"]/input')[1].send_keys('密码')
     #同意服务条款
     driver.find_element_by_xpath('//*[@id="accept"]').click()
     driver.find_element_by_class_name('zppp-submit').click()#点击登陆
